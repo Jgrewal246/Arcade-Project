@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<title>Snake</title>
+	<style>
+		body{
+			margin: 0px;
+			padding: 0px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		canvas{
+			box-shadow: black 30px 15px 75px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="font-size: 40px">The Ultimate Snake Game 
+		<button style="margin-left: 1px" class = "btn btn-lg btn-info" onclick = "window.location.reload();">Restart</button>
+		<form action="http://localhost:8000/index.html" style="text-align: center;">
+			<input  type="submit" value="Back to Arcade" class = "btn btn-lg  btn-primary m-2" />
+		</form>
+	</h1>
+	<canvas id="game" width="576" height="576"/>
+	<script src="snake.js"></script>
+</body>
+</html>

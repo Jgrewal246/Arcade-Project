@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman</title>
+	<h1 class = "text-center">The Ultimate Hangman Game!</h1>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class = "container">
+		<div style="font-size: 17px">Lives Used: 
+			<span id = 'wrongGuessCount'>0</span>/<span id = 'wrongGuessLimit'></span>
+			<label id="minutes" style = "margin-left: 50px">00</label>:<label id="seconds">00</label>
+		</div>
+		<div class = "text-center">
+			<img id = 'hangmanImg' src="images/1.jpg">
+			<p id = "wordDisplay" style="font-size: 40px"></p>
+			<div id = 'alphabet' style="font-size: 20px"></div>
+			<button class = "btn btn-info" onclick="restart()" style="font-size: 30px;margin: 20px">New Game</button>
+		</div>
+	</div>
+	<form action="http://localhost:8000/index.html" style="text-align: center;">
+			<input  type="submit" value="Back to Arcade" class = "btn btn-lg  btn-primary m-2" />
+	</form>
+	<script type = "text/javascript" src="hangman.js"></script>
+	<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+</body>
+</html>
